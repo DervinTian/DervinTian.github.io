@@ -3,6 +3,13 @@ body {
 }
 
 .top-bar {
+  background-color: skyblue;
   font-size: 40px;                /* make the link bigger */
   font-family: 'Helvetica', sans-serif;  /* clean, modern font */
+}
+
+.headshot {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
