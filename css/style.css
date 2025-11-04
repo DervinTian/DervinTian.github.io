@@ -4,6 +4,13 @@ body {
 
 .top-bar {
   background-color: skyblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bio{
+  font-size: 14px;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .left-links{
