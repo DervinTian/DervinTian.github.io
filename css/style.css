@@ -1,0 +1,8 @@
+body {
+  background-color: whitesmoke;
+}
+
+.top-bar {
+  font-size: 40px;                /* make the link bigger */
+  font-family: 'Helvetica', sans-serif;  /* clean, modern font */
+}
