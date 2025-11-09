@@ -19,7 +19,7 @@ body {
   padding-top: 15px;
 }
 
-.dervin-tian{
+.page-header{
   font-size: 48px;                /* make the link bigger */
   font-family: 'Helvetica', sans-serif;  /* clean, modern font */
   display: flex;
@@ -35,6 +35,9 @@ body {
   font-family:'Times New Roman', Times, serif;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
 }
 
 .left-links{
