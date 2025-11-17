@@ -105,6 +105,7 @@ a:active {
   padding-left: 30px;
   padding-right: 30px;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .link-box {
