@@ -145,3 +145,7 @@ a:active {
 .link-text{
   font-size: 22px;
 }
+
+.project-link a{
+  color: blue;
+}
