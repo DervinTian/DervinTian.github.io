@@ -138,9 +138,19 @@ a:active {
   align-items: center;
 }
 
+.link-box{
+  background-color: skyblue;
+  opacity: 0.85;
+}
+
+.link-header{
+  font-size: 36px;
+  font-family: 'Helvetica', Times, serif;
+}
+
 .link-text{
-  font-size: 22px;
-  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  font-family: 'Helvetica', Times, serif;
 }
 
 .context-text{
