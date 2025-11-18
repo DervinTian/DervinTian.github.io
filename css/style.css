@@ -138,13 +138,15 @@ a:active {
   align-items: center;
 }
 
+.link-text{
+  font-size: 22px;
+  font-family: 'Helvetica', sans-serif;
+}
+
 .context-text{
   display: flex;
   flex-direction: column;
-}
-
-.link-text{
-  font-size: 22px;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .project-link a{
