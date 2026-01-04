@@ -360,3 +360,16 @@ a:active {
   display: block; 
 }
 
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;  /* stack items vertically */
+    align-items: center;     /* optional: center them */
+  }
+
+  .row > * {
+    width: 90%;   /* optional: make items smaller to fit nicely */
+    margin-bottom: 1em;
+  }
+}
+
+
