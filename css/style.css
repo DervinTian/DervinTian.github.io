@@ -197,6 +197,65 @@ a:active {
   align-content: center;
 }
 
+.slideshow-container {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow-wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 32s infinite;
+}
+@keyframes slide {
+
+    0%{
+        transform: translateX(0);
+    }
+    6%{
+        transform: translateX(0);
+    }
+    11%{
+        transform: translateX(-100%);
+    }
+    22%{
+        transform: translateX(-100%);
+    }
+    27%{
+        transform: translateX(-200%);
+    }
+    39%{
+        transform: translateX(-200%);
+    }
+    44%{
+        transform: translateX(-300%);
+    }
+    55%{
+        transform: translateX(-300%);
+    }
+    60%{
+        transform: translateX(-400%);
+    }
+    72%{
+        transform: translateX(-400%);
+    }
+    77%{
+        transform: translateX(-500%);
+    }
+    89%{
+        transform: translateX(-500%);
+    }
+    94%{
+        transform: translateX(-600%);
+    }
+    100%{
+        transform: translateX(-600%);
+    }
+
+
+}
+
 .page-content {
   display: flex;
   flex-direction: row;
