@@ -333,3 +333,30 @@ a:active {
   background-color: white;
   color: black;
 }
+
+.grid-gallery {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 10em;
+  padding-right: 4em;
+  max-width: 1200px;
+  gap: 2em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  gap: 2em;
+}
+
+.grid-img {
+  width: 12em;
+  height: auto;
+  border-radius: 5%;
+  border: 2px solid white;
+  display: block; 
+}
+
