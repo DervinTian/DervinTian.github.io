@@ -1,10 +1,12 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Tahoma', sans-serif;
 }
 
 body {
   background-color: whitesmoke;
+  overflow-x: hidden;
 }
 
 a:link{
@@ -31,6 +33,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  z-index: 1;
 }
 
 .github-pic{
@@ -43,7 +46,6 @@ a:active {
 
 .page-header{
   font-size: 48px;                /* make the link bigger */
-  font-family: 'Helvetica', sans-serif;  /* clean, modern font */
   display: flex;
   justify-content: center;
   padding-top: 120px;
@@ -54,7 +56,6 @@ a:active {
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  font-family: 'Helvetica', Times, serif;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 200px;
@@ -64,13 +65,11 @@ a:active {
 
 .left-links{
   font-size: 35px;                /* make the link bigger */
-  font-family: 'Helvetica', sans-serif;  /* clean, modern font */
   padding-left: 25px;
 }
 
 .middle-links{
   font-size: 35px;   
-  font-family: 'Helvetica', sans-serif;
   display: flex;
   justify-content: space-evenly;
   gap: 50px; 
@@ -79,7 +78,6 @@ a:active {
 
 .right-links a{
   font-size: 35px;                /* make the link bigger */
-  font-family: 'Helvetica', sans-serif;  /* clean, modern font */
   text-decoration: none;
   padding-right: 25px;
 }
@@ -96,7 +94,6 @@ a:active {
 
 .about-me{
   font-size: 48px;                /* make the link bigger */
-  font-family: 'Helvetica', sans-serif;  /* clean, modern font */
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -150,18 +147,15 @@ a:active {
 
 .link-header{
   font-size: 36px;
-  font-family: 'Helvetica', Times, serif;
 }
 
 .link-text{
   font-size: 18px;
-  font-family: 'Helvetica', Times, serif;
 }
 
 .content-text {
   display: flex;
   flex-direction: column;
-  font-family: 'Helvetica', Times, serif;
 }
 
 .project-link a{
@@ -203,7 +197,80 @@ a:active {
   align-content: center;
 }
 
+.page-content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
 @keyframes spin {
   from {translate: 0;}
   to {translate: -100%}
+}
+
+.page-header-video {
+  position: absolute;   
+  top: 20%;             
+  left: 50%;            
+  transform: translateX(-50%); 
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5); /* optional: makes text readable */
+}
+
+.page-header-highlight-video {
+  position: relative;           
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5); /* optional: makes text readable */
+}
+
+.video-container {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  z-index: -1;
+}
+
+.highlight-content-box{
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  font-size: 20px; 
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+  max-width: 600px;
+}
+
+.highlight-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5vh;
+  padding-top: 10vh;
+  padding-left: 3vh;
+}
+
+.round-button a{
+  font-size: 23px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.round-button a:hover {
+  background-color: white;
+  color: black;
 }
