@@ -283,7 +283,7 @@ a:active {
 .page-header-highlight-video {
   position: relative;           
   color: white;
-  font-size: 4rem;
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: bold;
   text-shadow: 0 0 5px rgba(0,0,0,0.5); /* optional: makes text readable */
 }
