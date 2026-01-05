@@ -319,6 +319,17 @@ a:active {
   z-index: -1;
 }
 
+.video-container-cube {
+  position: relative; 
+  height: 25vh; 
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
 .highlight-content-box{
   border: 1px solid white;
   border-radius: 10px;
@@ -411,6 +422,7 @@ a:active {
   gap: 10em;
 }
 
+
 @media (min-width: 1000px) {
   .page-header-highlight-video {
   position: relative;           
@@ -481,6 +493,17 @@ a:active {
   position: relative;
   gap: 2em;
   padding-bottom: 2em;
+}
+
+.video-container-cube {
+  position: relative; 
+  height: 65vh; 
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
 }
 
 }
