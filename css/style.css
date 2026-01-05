@@ -33,7 +33,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .github-pic{
@@ -55,12 +55,13 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 1.5em;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 200px;
   padding-right: 200px;
   text-align: center;
+  color: white;
 }
 
 .left-links{
@@ -82,14 +83,28 @@ a:active {
   padding-right: 25px;
 }
 
+.header {
+  background-image: url(/images/home-bg.png);
+  background-size: cover;
+  background-position: center top;
+}
+
 .headshot {
-  padding-top: 30px;
   border-radius: 50%;
+  width: 25vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 7em;
 }
 
 .headshot-container{
-  display: flex;
+  display: block;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 2em;
 }
 
 .about-me{
@@ -102,6 +117,7 @@ a:active {
 .links-container {
   padding-top: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   padding-bottom: 50px;
   padding-left: 30px;
@@ -137,6 +153,7 @@ a:active {
   font-size: 20px; 
   gap: 20px;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -271,7 +288,7 @@ a:active {
 
 .page-header-video {
   position: absolute;   
-  top: 20%;             
+  top: 30%;             
   left: 50%;            
   transform: translateX(-50%); 
   color: white;
@@ -289,12 +306,15 @@ a:active {
   text-shadow: 0 0 5px rgba(0,0,0,0.5); /* optional: makes text readable */
   align-items: center;
   justify-content: center;
-  padding-top: 2em; padding-bottom: 2em;
+  padding-top: 3em; padding-bottom: 2em;
 }
 
 .video-container {
   display: flex;
+  flex-direction: column;
   width: 100vw;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: -1;
 }
@@ -400,6 +420,18 @@ a:active {
   text-shadow: 0 0 5px rgba(0,0,0,0.5); /* optional: makes text readable */
   justify-content: left;
   padding-left: 0.4em;
+  padding-bottom: 0.5em;
+}
+
+.page-header-video {
+  position: absolute;   
+  top: 20%;             
+  left: 50%;            
+  transform: translateX(-50%); 
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5); /* optional: makes text readable */
 }
 
   .highlight-project {
