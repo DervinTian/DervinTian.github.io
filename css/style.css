@@ -356,18 +356,14 @@ a:active {
 
 .round-button a{
   font-size: 23px;
-  color: white;
+  background-color: white;
+  color: black;
   text-decoration: none;
   border: 2px solid white;
   padding: 15px 25px;
   border-radius: 50px;
   position: relative;
   transition: 0.3s;
-}
-
-.round-button a:hover {
-  background-color: white;
-  color: black;
 }
 
 .grid-gallery {
