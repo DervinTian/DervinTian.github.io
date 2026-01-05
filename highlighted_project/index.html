@@ -34,16 +34,17 @@
 
     </header>
 
-    <body style="background-color: #434343;">
+    <body style="background-color: #434343; position: relative; display: flex; flex-direction: column">
 
-        <div style="display: flex; flex-direction: row; position: relative; height: 100vh; width: 100vw;">
+        <div class="page-header-highlight-video">
+            Highlighted Project: Virtual Rubik's Cube
+        </div>
 
-            <div class="highlight-content">
-                <div class="page-header-highlight-video">
-                    Highlighted Project: Virtual Rubik's Cube
-                </div>
+        <div class="highlight-project">
 
-                <div class="highlight-content-box">
+            <div class="highlight-content" style="padding-top: 0;">
+
+                <div class="highlight-content-box" style="max-width: 100%;">
                     Creation of an interactive virtual
                     Rubik's cube in Blender, along with
                     a Rubik's Cube solver to find solutions
@@ -67,11 +68,12 @@
                 </div>
             </div>
 
-            <div class="video-container" style="position: relative; height: 65vh; width: auto; padding-top: 10em;">
-                <video src="/images/sped-up-clip.mp4" style="max-width: 100vw; flex-wrap: wrap;" autoplay muted loop></video>
+            <div class="video-container" style="position: relative; height: 65vh; width: auto;">
+                <video src="/images/sped-up-clip.mp4" style="max-width: 100vw; flex-wrap: wrap;" autoplay muted loop playsinline></video>
 
                 <a href="/projects/" style="text-decoration:none"></a>
             </div>
+
         </div>
     </body>
 
