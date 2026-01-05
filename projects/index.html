@@ -46,23 +46,47 @@
 
         <div class="subpage-content-container">
 
-            <div class="content-box">
+            <div class="content-box" style="max-width: 100%;">
+                <a href="https://maavumich.org/" target="_blank">
+                    <img src="/images/maav-logo-border.png" width="200" height="100">
+                </a>
+                <div class="content-text">
+                    <h2>
+                        <div  class="project-link">MAAV: <a href="https://github.com/MAAV-Software/IARC_mission_10" target="_blank" style="text-decoration: none;">Object Detection</a></div>
+                    </h2>
+                    <p>
+                        9/2025 - Present    Tech Stack: Python, YOLO, Blender <br>
+                        <br>
+                        I created an object detection algorithm that was ablet to detect objects from images.
+                        To prepare for our upcoming drone competition, our drones need to be able to detect specific obstacles specified by the competition
+                        within images taken mid-flight. To do this, our team decided to use pre-trained models, specifically a YOLO v11n model
+                        that we custom-trained on our own images to better fit our needs. We chose YOLO due to their built-in ability to segment
+                        objects by using bounding boxes. To boost our training efficiency, we took real-world images, but also created a virtual 3D 
+                        environment that simulated the competition airfield and generated thousands of Blender images that allowed us to effectively train
+                        our model year-round. As of today, our model has a precision of around 75% and we are still training it to hopefully incrase performance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-box" style="max-width: 100%;">
                 <img src="/images/cube_icon.png" width="200" height="200">
                 <div class="content-text">
                     <h2>
                         <div class="project-link"><a href="https://github.com/DervinTian/Rubik-s-Cube-Solver" target="_blank" style="text-decoration: none;">Virtual Rubik's Cube</a></div>
                     </h2>
                     <p>
-                        7/2025 - 4/2025    Tech Stack: C++, Swift <br>
+                        7/2025 - 11/2025    Tech Stack: C++, Swift, Blender, Python <br>
                         <br>
-                        I created a C++ program that could find an efficient solution to the Rubik's Cube with a record time of 250 ms. <br>
-                        I utilized A* search and a custom heuristic function to search through different states of the Rubik's Cube, represented as nodes in a graph to find the solution. <br>
-                        In the end, I deployed the program as an webapp on macOS systems using Swift. <br>
+                        I created a C++ program that could find an efficient solution to the Rubik's Cube with a record time of 250 ms.
+                        I utilized A* search and a custom heuristic function to search through different states of the Rubik's Cube, represented as nodes in a graph to find the solution.
+                        In the end, I deployed the program as an webapp on macOS systems using Swift. In order to visualize the solution produced by the app, I also created a virtual 3D environment for a Rubik's Cube
+                        using Blender and brought the cube to life using Blender's built-in Python API to program the cube to take in user
+                        input and perform the necessary moves.
                     </p>
                 </div>
             </div>
 
-            <div class="content-box">
+            <div class="content-box" style="max-width: 100%;">
                 <a href="https://maavumich.org/" target="_blank">
                     <img src="/images/maav-logo-border.png" width="200" height="100">
                 </a>
@@ -73,30 +97,16 @@
                     <p>
                         3/2025 - 4/2025    Tech Stack: Python, OpenCV <br>
                         <br>
-                        I created an image stitching algorithm using Python and OpenCV. <br>
-                        Captured many images of an airfield and iteratively stitched them together to create a high quality aggregate image of the entire airfield. <br>
-                    </p>
-                </div>
-            </div>
-
-            <div class="content-box">
-                <a href="https://maavumich.org/" target="_blank">
-                    <img src="/images/maav-logo-border.png" width="200" height="100">
-                </a>
-                <div class="content-text">
-                    <h2>
-                        <div  class="project-link">MAAV: <a href="https://github.com/MAAV-Software/SUAS_24-25/blob/main/computer_vision/YOLO_tester.py" target="_blank" style="text-decoration: none;">Object Detection</a></div>
-                    </h2>
-                    <p>
-                        9/2024 - 12/2024    Tech Stack: Python, YOLO <br>
-                        <br>
-                        I created an object detection algorithm that was ablet to detect objects from images. <br>
-                        Utilized a YOLO model to be able to determine the bounding boxes and locations of each detected object within the image with up to 85% accuracy! <br>
+                        I created an image stitching algorithm using Python and OpenCV. 
+                        By capturing many consecutive images of an airfield, I applied classic Computer Vision 
+                        techniques such as SIFT features and homography transformations to correctly orient each image. 
+                        Once all of the images were properly oriented in alignment with each other, I was able to iteratively
+                        stitch the photos together on a unified canvas, allowing us to produce the proper stitched image.
                     </p>
                 </div>
             </div>
             
-            <div class="content-box">
+            <div class="content-box" style="max-width: 100%;">
                 <a href="https://www.tu.berlin/en/" target="_blank">
                     <img src="/images/TU-Berlin.png" width="200" height="150">
                 </a>
@@ -107,13 +117,15 @@
                     <p>
                         5/2024 - 8/2024     Tech Stack: MATLAB, Arduino<br>
                         <br>
-                        I programmed a robotic self-balancing segway using MATLAB and Arduino!  <br>
-                        Implemented predictive controls in Simulink and applied Kalman Filtering in order to iteratively update position. <br>
+                        I spent 6 weeks building a robotic self-balancing segway using MATLAB and Arduino. 
+                        I Implemented predictive controls in Simulink and applied Kalman Filtering in order to iteratively update position.
+                        This allowed our segway to re-orient itself given different parameters, such as the tilt angle of the body. By implenting
+                        these features into our custom controller, the segway was able to stay upright for up to arond 5-10 seconds.
                     </p>
                 </div>
             </div>
 
-            <div class="content-box">
+            <div class="content-box" style="max-width: 100%;">
                 <a href="https://mdst.club/" target="_blank">
                     <img src="/images/mdst_logo.png" width="200" height="200">
                 </a>
@@ -124,13 +136,16 @@
                     <p>
                         1/2024 - 4/2024     Tech Stack: PyTorch, Python, pandas<br>
                         <br>
-                        I created a neural network from scratch in order to detect network intrusion with up to 95% accuracy!  <br>
-                        Utilized machine learning techniques like backpropogation and cross validation to optimize performance. <br>
+                        I gained hands-on experience by creating a neural network from scratch, integrating Machine Learning concepts from
+                        scratch such as backpropogation and feedforward algorithms. The entire model was coded using Python and pytorch, with 
+                        features like backpropogation being implemented using standard Python Numpy Math and matrix multiplication.
+                        The model was trained on network data in order to detect network intrusion
+                        and was able to correctly detect network intrusion with an accuraccy of up to 95%.
                     </p>
                 </div>
             </div>
 
-            <div class="content-box">
+            <div class="content-box" style="max-width: 100%;">
                 <a href="https://mdst.club/" target="_blank">
                     <img src="/images/mdst_logo.png" width="200" height="200">
                 </a>
@@ -141,8 +156,10 @@
                     <p>
                         9/2023 - 1/2024     Tech Stack: Selenium, Python, Matplotlib<br>
                         <br>
-                        I created an ecommerce webscraping tool to get information about certain items.  <br>
-                        Through this, we were able to get information such as mean price, mean rating of items across online stores, such as Amazon. <br>
+                        I worked on a ecommerce webscraping project. The aim of this project was to scrape popular online shopping websites,  
+                        such as Amazon, in order to find the average rating and prices for certain objects. We were able to visualize these 
+                        metrics in a standard Python plot using Matplotlib and key in on items that were seemingly overpriced for their rating.
+                        This allowed the user, to gague the price range that they should be targeting for the best valued product according to the search query.
                     </p>
                 </div>
             </div>
