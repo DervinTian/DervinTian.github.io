@@ -52,36 +52,31 @@
                 </a>
                 <div class="content-text">
                     <h2>
-                        <div  class="project-link">MAAV: <a href="https://github.com/MAAV-Software/IARC_mission_10" target="_blank" style="text-decoration: none;">Object Detection</a></div>
+                        MAAV: Drone Fleet
                     </h2>
                     <p>
-                        9/2025 - Present    Tech Stack: Python, YOLO, Blender <br>
+                        12/2025 - Present    Tech Stack: Python <br>
                         <br>
-                        I created an object detection algorithm that was ablet to detect objects from images.
-                        To prepare for our upcoming drone competition, our drones need to be able to detect specific obstacles specified by the competition
-                        within images taken mid-flight. To do this, our team decided to use pre-trained models, specifically a YOLO v11n model
-                        that we custom-trained on our own images to better fit our needs. We chose YOLO due to their built-in ability to segment
-                        objects by using bounding boxes. To boost our training efficiency, we took real-world images, but also created a virtual 3D 
-                        environment that simulated the competition airfield and generated thousands of Blender images that allowed us to effectively train
-                        our model year-round. As of today, our model has a precision of around 75% and we are still training it to hopefully incrase performance.
-                    </p>
-                </div>
-            </div>
+                        In created a distributed system for MAAV. The aim of the competition is to have a fleet
+                        of 4 drones all contributing towards a task. In order to maximize the efficency of our drone
+                        fleet, I designed a distributed system utilizing Python sockets so that the drones can 
+                        cover their own regions, and then communicate the results to one another. <br>
 
-            <div class="content-box" style="max-width: 100%;">
-                <img src="/images/cube_icon.png" width="200" height="200">
-                <div class="content-text">
-                    <h2>
-                        <div class="project-link"><a href="https://github.com/DervinTian/Rubik-s-Cube-Solver" target="_blank" style="text-decoration: none;">Virtual Rubik's Cube</a></div>
-                    </h2>
-                    <p>
-                        7/2025 - 11/2025    Tech Stack: C++, Swift, Blender, Python <br>
                         <br>
-                        I created a C++ program that could find an efficient solution to the Rubik's Cube with a record time of 250 ms.
-                        I utilized A* search and a custom heuristic function to search through different states of the Rubik's Cube, represented as nodes in a graph to find the solution.
-                        In the end, I deployed the program as an webapp on macOS systems using Swift. In order to visualize the solution produced by the app, I also created a virtual 3D environment for a Rubik's Cube
-                        using Blender and brought the cube to life using Blender's built-in Python API to program the cube to take in user
-                        input and perform the necessary moves.
+                        The goal of the drones is to be able to map out a football-field sized area and take note
+                        of any obstacles during their flyby. This system allows the drones to fly through 
+                        their own zones and then aggregate their results to map out the areas of interest and also
+                        calculate a path that avoids all obstacles from one side to the other. <br>
+                        
+                        <br>
+                        To process the results communicated by the drones, a MapReduce framework was implemented. By
+                        splitting up the processing into separate map and reduce stage, I was able to extract out the 
+                        locations of each obstacle and plot them accordingly. I then utilized a simple Breadth-First Search
+                        with binary search to find an optimal path through the obstacles.
+                        <br>
+
+                        <br> Github: <a href="https://github.com/MAAV-Software/IARC_mission_10/tree/networking" target="_blank" style="color: blue;">Drone Fleet</a>
+                    </h2>
                     </p>
                 </div>
             </div>
@@ -92,7 +87,52 @@
                 </a>
                 <div class="content-text">
                     <h2>
-                        <div class="project-link">MAAV: <a href="https://github.com/MAAV-Software/SUAS_24-25/blob/main/computer_vision/CVstitcher.py" target="_blank" style="text-decoration: none;">Drone Image Mapping</a></div>
+                        MAAV: Object Detection
+                    </h2>
+                    <p>
+                        9/2025 - Present    Tech Stack: Python, YOLO, Blender <br>
+                        <br>
+                        I created an object detection algorithm that was ablet to detect objects from images.
+                        To prepare for our upcoming drone competition, our drones need to be able to detect specific obstacles specified by the competition
+                        within images taken mid-flight. To do this, our team decided to use pre-trained models, specifically a YOLO v11n model
+                        that we custom-trained on our own images to better fit our needs. We chose YOLO due to their built-in ability to segment
+                        objects by using bounding boxes. To boost our training efficiency, we took real-world images, but also created a virtual 3D 
+                        environment that simulated the competition airfield and generated thousands of Blender images that allowed us to effectively train
+                        our model year-round. As of today, our model has a precision of around 75% and we are still training it to hopefully incrase performance. <br>
+
+                        <br> Github: <a href="https://github.com/MAAV-Software/IARC_mission_10" target="_blank" style="color: blue;">Object Detection</a>
+                    </h2>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-box" style="max-width: 100%;">
+                <img src="/images/cube_icon.png" width="200" height="200">
+                <div class="content-text">
+                    <h2>
+                        Virtual Rubik's Cube
+                    </h2>
+                    <p>
+                        7/2025 - 11/2025    Tech Stack: C++, Swift, Blender, Python <br>
+                        <br>
+                        I created a C++ program that could find an efficient solution to the Rubik's Cube with a record time of 250 ms.
+                        I utilized A* search and a custom heuristic function to search through different states of the Rubik's Cube, represented as nodes in a graph to find the solution.
+                        In the end, I deployed the program as an webapp on macOS systems using Swift. In order to visualize the solution produced by the app, I also created a virtual 3D environment for a Rubik's Cube
+                        using Blender and brought the cube to life using Blender's built-in Python API to program the cube to take in user
+                        input and perform the necessary moves. <br>
+
+                        <br> Github: <a href="https://github.com/DervinTian/Rubik-s-Cube-Solver" target="_blank" style="color: blue;">Virtual Rubik's Cube</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-box" style="max-width: 100%;">
+                <a href="https://maavumich.org/" target="_blank">
+                    <img src="/images/maav-logo-border.png" width="200" height="100">
+                </a>
+                <div class="content-text">
+                    <h2>
+                        MAAV: Drone Image Mapping
                     </h2>
                     <p>
                         3/2025 - 4/2025    Tech Stack: Python, OpenCV <br>
@@ -101,7 +141,9 @@
                         By capturing many consecutive images of an airfield, I applied classic Computer Vision 
                         techniques such as SIFT features and homography transformations to correctly orient each image. 
                         Once all of the images were properly oriented in alignment with each other, I was able to iteratively
-                        stitch the photos together on a unified canvas, allowing us to produce the proper stitched image.
+                        stitch the photos together on a unified canvas, allowing us to produce the proper stitched image. <br>
+
+                        <br> Github: <a href="https://github.com/MAAV-Software/SUAS_24-25/blob/main/computer_vision/CVstitcher.py" target="_blank" style="color: blue;">Drone Image Mapping</a>
                     </p>
                 </div>
             </div>
@@ -112,7 +154,7 @@
                 </a>
                 <div class="content-text">
                     <h2>
-                        <div class="project-link">Technische Universitat Berlin: <a href="https://github.com/DervinTian/Robotic-Self-Balancing-Segway" target="_blank" style="text-decoration: none;">Self-Balancing Segway</a></div>
+                        Technische Universitat Berlin: Self-Balancing Segway
                     </h2>
                     <p>
                         5/2024 - 8/2024     Tech Stack: MATLAB, Arduino<br>
@@ -120,7 +162,9 @@
                         I spent 6 weeks building a robotic self-balancing segway using MATLAB and Arduino. 
                         I Implemented predictive controls in Simulink and applied Kalman Filtering in order to iteratively update position.
                         This allowed our segway to re-orient itself given different parameters, such as the tilt angle of the body. By implenting
-                        these features into our custom controller, the segway was able to stay upright for up to arond 5-10 seconds.
+                        these features into our custom controller, the segway was able to stay upright for up to arond 5-10 seconds. <br>
+
+                        <br> Github: <a href="https://github.com/DervinTian/Robotic-Self-Balancing-Segway" target="_blank" style="color: blue;">Self-Balancing Segway</a>
                     </p>
                 </div>
             </div>
@@ -131,7 +175,7 @@
                 </a>
                 <div class="content-text">
                     <h2>
-                        <div class="project-link">Michigan Data Science Team: <a href="https://github.com/DervinTian/Amazon-Webscraping" target="_blank" style="text-decoration: none;">Neural Networks from Scratch</a></div>
+                        Michigan Data Science Team: Neural Networks from Scratch
                     </h2>
                     <p>
                         1/2024 - 4/2024     Tech Stack: PyTorch, Python, pandas<br>
@@ -140,7 +184,9 @@
                         scratch such as backpropogation and feedforward algorithms. The entire model was coded using Python and pytorch, with 
                         features like backpropogation being implemented using standard Python Numpy Math and matrix multiplication.
                         The model was trained on network data in order to detect network intrusion
-                        and was able to correctly detect network intrusion with an accuraccy of up to 95%.
+                        and was able to correctly detect network intrusion with an accuraccy of up to 95%. <br>
+
+                        <br> Github: <a href="https://github.com/DervinTian/Amazon-Webscraping" target="_blank" style="color: blue;">Neural Networks from Scratch</a>
                     </p>
                 </div>
             </div>
@@ -151,7 +197,7 @@
                 </a>
                 <div class="content-text">
                     <h2>
-                        <div class="project-link">Michigan Data Science Team: <a href="https://github.com/DervinTian/Neural-Networks-from-Scratch" target="_blank" style="text-decoration: none;">Webscraping Project</a></div>
+                        Michigan Data Science Team: Webscraping Project
                     </h2>
                     <p>
                         9/2023 - 1/2024     Tech Stack: Selenium, Python, Matplotlib<br>
@@ -159,7 +205,9 @@
                         I worked on a ecommerce webscraping project. The aim of this project was to scrape popular online shopping websites,  
                         such as Amazon, in order to find the average rating and prices for certain objects. We were able to visualize these 
                         metrics in a standard Python plot using Matplotlib and key in on items that were seemingly overpriced for their rating.
-                        This allowed the user, to gague the price range that they should be targeting for the best valued product according to the search query.
+                        This allowed the user, to gague the price range that they should be targeting for the best valued product according to the search query. <br>
+
+                        <br> Github: <a href="https://github.com/DervinTian/Neural-Networks-from-Scratch" target="_blank" style="color: blue;">Webscraping Project</a>
                     </p>
                 </div>
             </div>
