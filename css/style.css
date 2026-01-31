@@ -411,13 +411,31 @@ a:active {
   width: 100vw;
 }
 
-  .highlight-experience {
+.highlight-experience {
   display: flex; 
   flex-direction: column; 
   position: relative; 
   height: 100vh; 
   width: 100vw; 
   gap: 10em;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-header {
+  font-size: 5em;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+.gallery-img {
+  height: auto;
+  width: 50vw;
+  padding: 2em;
 }
 
 
