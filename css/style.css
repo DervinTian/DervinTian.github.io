@@ -328,6 +328,7 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 100vw;
   z-index: -1;
 }
 
@@ -500,6 +501,7 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 50vw;
   z-index: -1;
 }
 
