@@ -57,11 +57,16 @@
                         <br>
                         I designed and implemeted my own custom SQL-Like language. It is called QMT and is mainly used to query data from 
                         a local database. A good way to think about it a sqlite3 clone. It currently supports operations such as SELECT, 
-                        JOIN, WHERE, etc. The end goal of QMT is to be similar to a virutal machine, essentially SQL Server, but the Server
-                        is a simulated disk on the users' local machine with it's own disk and memory management system. This project is
-                        still heavily ongoing and still a large work in progress, but the QMT language itself is able to run. <br>
+                        JOIN, WHERE, etc. <br>
+                        
+                        <br>The QMT Project does not only encompass the programming language, but also attempts to replicate other features of 
+                        a database engine. One of the defining features of the QMT is that it has it's own custom software-simulated disk on the backend. 
+                        Instead of relying on the filesystem provided by the local machine's operating system, the QMT database engine requires the 
+                        user to create a virtual disk that serves as the underlying storage medium. The remaining QMT commands then interact 
+                        with this virtual disk to store and manage database records.
+                        <br>
 
-                        <br> Github: <a href="https://github.com/DervinTian/QMT" target="_blank" style="color: blue;">QMT</a>
+                        <br> Github (Multiple Branches): <a href="https://github.com/DervinTian/QMT" target="_blank" style="color: blue;">QMT</a>
                     </h2>
                     </p>
                 </div>
